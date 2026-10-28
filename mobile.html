@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-// จอกว้าง (desktop) ให้กลับไปหน้าหลัก
+// จอกว้างให้กลับไปหน้าเดสก์ท็อป
 if(window.matchMedia('(min-width: 768px)').matches){
   location.replace('index.html'+location.hash);
 }
@@ -32,7 +32,6 @@ h2{font-size:20px;font-weight:700}
 .soc.foot a{border-color:#555555;color:#D9D9D9}
 .burger{width:44px;height:44px;border:1px solid #F2D5DE;border-radius:12px;background:#FFFFFF;color:#111111;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
 .mnav{display:flex;flex-direction:column;gap:2px;padding:10px 16px 18px;background:#FFFFFF;border-bottom:1px solid #F2D5DE}
-.mnav[hidden]{display:none}
 .mnav > a{display:flex;align-items:center;min-height:46px;padding:0 10px;border-radius:10px;font-weight:600;font-size:15px}
 .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease}
 .slide.on{opacity:1}
@@ -271,12 +270,12 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
 </section>
 
 <!-- CTA -->
-<section class="sec" style="padding-top: 4px;">
-  <div style="background: #C2185B; color: #FFFFFF; border-radius: 16px; padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; text-align: center; align-items: center;">
-    <h2 style="color: #FFFFFF; font-size: 22px;">ส่งรูปมาที่ LINE<br>ให้เราทำแบบให้ดูฟรี</h2>
-    <p style="margin: 0; font-size: 12.5px; color: #FBE4EA;">ตอบไวทุกวัน แจ้งราคาและวันส่งชัดเจนก่อนผลิตค่ะ</p>
+<section class="sec" style="padding-top: 4px; background-color: transparent">
+  <div style="color: #FFFFFF; border-radius: 16px; padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; text-align: center; align-items: center; background-color: #ffffff">
+    <h2 style="color: #c2185b; font-size: 22px">ส่งรูปมาที่ LINE<br>ให้เราทำแบบให้ดูฟรี</h2>
+    <p style="margin: 0; font-size: 12.5px; color: #111111">ตอบไวทุกวัน แจ้งราคาและวันส่งชัดเจนก่อนผลิตค่ะ</p>
     <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift" style="align-self: stretch; min-height: 54px; font-size: 17px; box-shadow: 0 10px 24px rgba(0,0,0,.2);"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>แอด LINE @aunirakgift</a>
-    <a href="tel:0946715553" style="color: #FFFFFF; font-weight: 600; font-size: 13px; min-height: 40px; display: inline-flex; align-items: center;">หรือโทร 094-671-5553</a>
+    <a href="tel:0946715553" style="color: #111111; font-weight: 600; font-size: 13px; min-height: 40px; display: inline-flex; align-items: center">หรือโทร 094-671-5553</a>
   </div>
 </section>
 
@@ -291,11 +290,16 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
     <a href="tel:0946715553">โทร: 094-671-5553</a>
     <a href="https://www.facebook.com/Pillow.AUN.I.RUK">Facebook: Pillow.AUN.I.RUK</a>
     <a href="https://www.instagram.com/aunirakgift">Instagram: aunirakgift</a>
-    <span style="color: #CFCFCF; grid-column: span 2;">[ที่อยู่ร้าน / โรงงาน] · เวลาทำการ: [วัน–วัน เวลา–เวลา]</span>
+    <span style="color: #CFCFCF; grid-column: span 2;">846/71 ประชาอุทิศ 44 ซอย 5 แขวงบางมด เขตทุ่งครุ กรุงเทพมหานคร 10140 · เปิดทุกวัน 09.00–19.00 น.</span>
   </div>
   <div class="soc foot"><a href="https://www.facebook.com/Pillow.AUN.I.RUK" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"></path></svg></a><a href="https://www.instagram.com/aunirakgift" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.5" fill="currentColor"></circle></svg></a><a href="mailto:[อีเมลร้าน]" aria-label="อีเมล"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m3 7 9 6 9-6"></path></svg></a></div>
-  <div style="border-radius: 12px; overflow: hidden; background: #FBE4EA; height: 140px;">
-    <div class="placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>[Google Maps embed]</div>
+  <div style="border-radius: 12px; overflow: hidden; background: #FBE4EA; height: 150px;">
+    <a href="https://maps.google.com/?q=846/71%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B4%E0%B8%A8%2044%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%205%20%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%94%20%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%97%E0%B8%B8%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B8%20%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%2010140" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 150px; background: #FBE4EA; color: #111111; text-align: center; padding: 14px;">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="#C2185B" stroke="#C2185B" stroke-width="1" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"></path><circle cx="12" cy="9.5" r="2.5" fill="#FFFFFF" stroke="none"></circle></svg>
+          <span style="font-weight: 700; font-size: 13px;">อุ่นไอรัก หมอนของขวัญ</span>
+          <span style="font-size: 11px; color: #555555;">846/71 ประชาอุทิศ 44 ซอย 5<br>แขวงบางมด เขตทุ่งครุ กรุงเทพมหานคร 10140</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 11px; color: #C2185B;">แตะเพื่อเปิดแผนที่ Google Maps</span>
+        </a>
   </div>
   <div style="border-top: 1px solid #333333; padding-top: 12px; font-size: 11px; color: #CFCFCF; text-align: center;">© 2026 อุ่นไอรัก หมอนของขวัญ · aunirakgift — ทำด้วยใจ ส่งตรงเวลา</div>
 </footer>
@@ -309,20 +313,17 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
 (function(){
   document.documentElement.classList.add('js-ready');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // reveal on scroll
   var rv=document.querySelectorAll('[data-rv]');
   if('IntersectionObserver' in window && !reduce){
     var io=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){e.target.style.transitionDelay=((i%6)*50)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
     rv.forEach(function(el){io.observe(el);});
   } else { rv.forEach(function(el){el.classList.add('in');}); }
-  // hero slider
   var slides=document.querySelectorAll('.hero-img .slide');
   var dots=document.querySelectorAll('.hero-img .dot');
   var cur=0,timer=null;
   function go(i){cur=i%slides.length;slides.forEach(function(s,k){s.classList.toggle('on',k===cur);});dots.forEach(function(d,k){d.classList.toggle('active',k===cur);});}
   dots.forEach(function(d,k){d.addEventListener('click',function(){if(timer){clearInterval(timer);timer=null;}go(k);});});
   if(slides.length>1 && !reduce){timer=setInterval(function(){go(cur+1);},4500);}
-  // mobile menu
   var burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
   if(burger&&mnav){burger.addEventListener('click',function(){var open=mnav.hasAttribute('hidden');if(open){mnav.removeAttribute('hidden');}else{mnav.setAttribute('hidden','');}burger.setAttribute('aria-expanded',open?'true':'false');});
     mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mnav.setAttribute('hidden','');burger.setAttribute('aria-expanded','false');});});}
