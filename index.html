@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// ผู้ใช้มือถือ (จอแคบ) ให้ไปหน้าเวอร์ชันมือถือ ยกเว้นขอดูหน้า desktop เอง (?desktop)
+if(window.matchMedia('(max-width: 767px)').matches && !location.search.includes('desktop')){
+  location.replace('mobile.html'+location.hash);
+}
+</script>
 <title>อุ่นไอรัก หมอนของขวัญ — หมอนสกรีนรูป หมอนไดคัท สั่งทำตามแบบ</title>
 <meta name="description" content="อุ่นไอรัก หมอนของขวัญ (@aunirakgift) — หมอนสกรีนรูป หมอนไดคัท ผ้าห่ม แก้ว และกรอบรูปสั่งทำตามแบบ ธุรกิจครัวเรือน ออกแบบและผลิตเองทุกขั้นตอน สั่งขั้นต่ำ 1 ชิ้น ผลิตเสร็จใน 3–4 วัน">
 <link rel="preconnect" href="https://fonts.googleapis.com">
