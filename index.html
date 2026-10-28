@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>อุ่นไอรัก หมอนของขวัญ — หมอนสกรีนรูป หมอนไดคัท สั่งทำตามแบบ</title>
+<meta name="description" content="อุ่นไอรัก หมอนของขวัญ (@aunirakgift) — หมอนสกรีนรูป หมอนไดคัท ผ้าห่ม แก้ว และกรอบรูปสั่งทำตามแบบ ธุรกิจครัวเรือน ออกแบบและผลิตเองทุกขั้นตอน สั่งขั้นต่ำ 1 ชิ้น ผลิตเสร็จใน 3–4 วัน">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;600;700&amp;family=Noto+Sans+Thai:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF;color:#111111;font-family:'Noto Sans Thai',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#111111;text-decoration:none;transition:color .2s ease}a:hover{color:#C2185B}
+h1,h2,h3{font-family:'Athiti',sans-serif;line-height:1.2;margin:0}
+*{box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;cursor:pointer;transition:background .2s ease,color .2s ease,transform .2s ease;border:2px solid transparent}
+.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #C2185B;outline-offset:3px}
+.btn-primary{background:#C2185B;color:#FFFFFF}.btn-primary:hover{background:#A3124C;color:#FFFFFF;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:#111111;border-color:#111111}.btn-outline:hover{background:#111111;color:#FFFFFF}
+.btn-white{background:#FFFFFF;color:#C2185B}.btn-white:hover{background:#FBE4EA;color:#A3124C}
+.btn-line{background:#06C755;color:#FFFFFF}.btn-line:hover{background:#05A847;color:#FFFFFF;transform:translateY(-1px)}
+.nav-link{font-weight:500;padding:10px 2px;border-bottom:2px solid transparent;transition:border-color .2s ease,color .2s ease;display:inline-flex;align-items:center;gap:6px;min-height:44px;white-space:nowrap;font-size:14px}
+.nav-link:hover,.nav-link.active{border-bottom-color:#C2185B;color:#C2185B}
+.has-menu{position:relative}
+.has-menu .menu{position:absolute;top:100%;left:-12px;min-width:260px;background:#FFFFFF;border:1px solid #F2D5DE;border-radius:16px;padding:10px;box-shadow:0 18px 40px rgba(17,17,17,.12);display:none;flex-direction:column;gap:2px;z-index:20}
+.has-menu:hover .menu,.has-menu:focus-within .menu{display:flex}
+.has-menu .menu a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;min-height:44px;font-size:15px}
+.has-menu .menu a:hover{background:#FBE4EA;color:#C2185B}
+.has-menu .menu small{display:block;font-size:12px;color:#6B6B6B;font-weight:400}
+.has-menu .menu .thumb{width:40px;height:40px;border-radius:10px;object-fit:cover;flex-shrink:0;background:#FBE4EA}
+.cat-card{display:flex;flex-direction:column;gap:14px;cursor:pointer}
+.cat-card .cat-img{aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:#FBE4EA;display:flex;align-items:center;justify-content:center;transition:transform .25s ease,box-shadow .25s ease}
+.cat-card:hover .cat-img{transform:translateY(-4px);box-shadow:0 14px 32px rgba(194,24,91,.14)}
+.cat-card img{width:100%;height:100%;object-fit:cover;display:block}
+.cat-card .cat-link{color:#C2185B;font-weight:600;font-size:15px;display:inline-flex;align-items:center;gap:6px}
+.prod-card{background:#FFFFFF;border:1px solid #EFE3E7;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.prod-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(17,17,17,.10)}
+.prod-card .prod-img{aspect-ratio:1/1;background:#FFF7F9;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.prod-card img{width:100%;height:100%;object-fit:cover;display:block}
+.badge-new{position:absolute;top:14px;left:14px;background:#C2185B;color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:999px}
+.ask-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:2px solid #06C755;background:#FFFFFF;color:#067A38;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s ease,color .2s ease}
+.ask-btn:hover{background:#06C755;color:#FFFFFF}
+.placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;color:#8A1240;background:repeating-linear-gradient(45deg,#FBE4EA 0 14px,#F9D9E2 14px 28px);font-size:14px;font-weight:600;text-align:center;padding:16px}
+.step-num{width:52px;height:52px;border-radius:999px;background:#C2185B;color:#FFFFFF;font-family:'Athiti',sans-serif;font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.work-tile{border-radius:20px;overflow:hidden;background:#FBE4EA;position:relative;aspect-ratio:1/1}
+.work-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.work-tile:hover img{transform:scale(1.04)}
+.work-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(to top,rgba(17,17,17,.78),rgba(17,17,17,0));color:#FFFFFF;font-weight:600;font-size:15px}
+.review-card{background:#FFFFFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px;border:1px solid #F2D5DE}
+.star{color:#C2185B}
+.footer a{color:#D9D9D9}.footer a:hover{color:#F2A0B5}
+.dot{width:10px;height:10px;border-radius:999px;background:#F2A0B5;border:0;padding:0;cursor:pointer}
+.dot.active{background:#C2185B}
+
+/* --- ลูกเล่น (ui-ux-pro-max: scroll reveal 250-350ms power1.out, stagger 40-60ms, reduced-motion respected) --- */
+html.js-ready [data-rv]{opacity:0;transform:translateY(16px);transition:opacity .35s cubic-bezier(.25,.46,.45,.94),transform .35s cubic-bezier(.25,.46,.45,.94)}
+html.js-ready [data-rv].in{opacity:1;transform:none}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .7s ease,transform 5s linear}
+.slide.on{opacity:1;transform:scale(1)}
+.hero-img .slide:first-of-type{opacity:1;transform:none}
+.dot{width:10px;height:10px;border-radius:999px;background:#F2A0B5;border:0;padding:0;cursor:pointer;transition:width .25s ease,background .25s ease}
+.dot.active{background:#C2185B;width:28px}
+.dotwrap{position:absolute;right:24px;bottom:24px;display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.85);padding:10px 12px;border-radius:999px}
+.dotwrap .dot{min-width:10px;height:10px}
+.btn .arrow{transition:transform .25s ease}.btn:hover .arrow{transform:translateX(4px)}
+.cat-card .cat-link svg,.ask-btn svg{transition:transform .25s ease}
+.cat-card:hover .cat-link svg{transform:translateX(4px)}
+.prod-card .prod-img img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.prod-card:hover .prod-img img{transform:scale(1.06)}
+.cat-card img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.cat-card:hover img{transform:scale(1.06)}
+.work-tile .cap{transform:translateY(6px);opacity:.92;transition:transform .3s ease,opacity .3s ease}
+.work-tile:hover .cap{transform:none;opacity:1}
+.step-num{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease}
+.steps > div:hover .step-num{transform:scale(1.12) rotate(-6deg);box-shadow:0 8px 20px rgba(194,24,91,.3)}
+.btn-line{position:relative;overflow:hidden}
+.btn-line:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);transition:left .6s ease}
+.btn-line:hover:after{left:120%}
+.float-line{position:fixed;right:24px;bottom:24px;z-index:50;display:inline-flex;align-items:center;gap:10px;background:#06C755;color:#FFFFFF;border-radius:999px;padding:0 22px 0 14px;min-height:60px;font-weight:700;font-size:16px;box-shadow:0 14px 34px rgba(0,0,0,.22);transition:transform .2s ease,background .2s ease}
+.float-line:hover{background:#05A847;color:#FFFFFF;transform:translateY(-2px)}
+.float-line:before{content:"";position:absolute;inset:-6px;border-radius:999px;border:2px solid #06C755;opacity:0;animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{transform:scale(.9);opacity:.7}100%{transform:scale(1.25);opacity:0}}
+.ticker{overflow:hidden;white-space:nowrap;border-top:1px solid #F2D5DE;border-bottom:1px solid #F2D5DE;background:#FFFFFF}
+.ticker .track{display:inline-flex;gap:48px;padding:14px 0;animation:ticker 28s linear infinite;will-change:transform}
+.ticker:hover .track{animation-play-state:paused}
+.ticker span{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:#111111;font-size:15px}
+.ticker i{width:6px;height:6px;border-radius:999px;background:#C2185B;display:inline-block}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.promo-card{display:flex;border-radius:24px;overflow:hidden;position:relative;min-height:220px;transition:transform .25s ease,box-shadow .25s ease}
+.promo-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(17,17,17,.14);color:inherit}
+.promo-big{flex-direction:column;min-height:520px}
+.promo-img{flex:1;min-height:240px;overflow:hidden}
+.promo-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.promo-card:hover .promo-img img{transform:scale(1.06)}
+.promo-img.small{flex:0 0 42%;min-height:0}
+.promo-body{display:flex;flex-direction:column;gap:12px;padding:26px 28px;flex:1;justify-content:center}
+.promo-tag{align-self:flex-start;background:#F2A0B5;color:#111111;font-size:12px;font-weight:700;letter-spacing:.08em;padding:5px 12px;border-radius:999px}
+@media (max-width:900px){.promo-grid{grid-template-columns:1fr !important;grid-template-rows:auto !important}.promo-big{grid-row:span 1 !important}.promo-card{flex-direction:column}.promo-img.small{flex:0 0 200px}}
+.burger{display:none;width:44px;height:44px;border:1px solid #F2D5DE;border-radius:12px;background:#FFFFFF;color:#111111;align-items:center;justify-content:center;cursor:pointer}
+.mnav{display:flex;flex-direction:column;gap:4px;padding:12px 16px 20px;background:#FFFFFF;border-bottom:1px solid #F2D5DE}
+.mnav > a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:0 10px;border-radius:10px;font-weight:600;font-size:16px}
+.mnav > a:not(.btn):hover{background:#FBE4EA}
+@media (max-width:900px){.burger{display:inline-flex}.hdr-cta{display:none !important}.hdr-tel{display:none !important}}
+.cat-sec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;padding:56px 64px;max-width:1440px;margin:0 auto;width:100%}
+.cat-sec .media{border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:#FBE4EA;width:100%;align-self:center}
+.cat-sec .media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.cat-sec:hover .media img{transform:scale(1.04)}
+.cat-sec.rev .media{order:2}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #F2D5DE;border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;background:#FFFFFF}
+.chip b{color:#C2185B;font-weight:700}
+@media (max-width:900px){.cat-sec{grid-template-columns:1fr !important;gap:20px;padding:40px 16px}.cat-sec.rev .media{order:0}}
+.soc{display:flex;gap:6px;align-items:center}
+.soc a{width:40px;height:40px;border-radius:999px;border:1px solid #F2D5DE;display:inline-flex;align-items:center;justify-content:center;color:#111111;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.soc a:hover{background:#FBE4EA;color:#C2185B;border-color:#F2A0B5}
+.soc.foot a{border-color:#555555;color:#D9D9D9}
+.soc.foot a:hover{background:#1F1F1F;color:#F2A0B5;border-color:#F2A0B5}
+@media (max-width:900px){.hdr-soc{display:none}}
+.price-card{border:1px solid #F2D5DE;border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px;background:#FFFFFF;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.price-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(194,24,91,.12);border-color:#F2A0B5}
+.price-card:hover svg{stroke:#C2185B}
+.price-card svg{transition:stroke .25s ease}
+@media (max-width:900px){.price-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.story{grid-template-columns:1fr !important}.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:560px){.price-grid,.story-pts{grid-template-columns:1fr !important}}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}html.js-ready [data-rv]{opacity:1;transform:none}.slide{transform:none}}
+@media (max-width:600px){.float-line span{display:none}.float-line{padding:0 14px}}
+@media (max-width:900px){
+ .nav-links{display:none !important}
+ .hero{grid-template-columns:1fr !important;padding:40px 16px !important}
+ .hero-img{height:360px !important}
+ .trust{grid-template-columns:1fr !important}
+ .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+ .feature-band{grid-template-columns:1fr !important;padding:32px 20px !important}
+ .prod-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+ .steps{grid-template-columns:1fr !important}
+ .works{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+ .reviews{grid-template-columns:1fr !important}
+ .footer-grid{grid-template-columns:1fr 1fr !important}
+ .section{padding-left:16px !important;padding-right:16px !important}
+ .h-display{font-size:40px !important}
+ .line-cta h2{font-size:32px !important}
+}
+@media (max-width:560px){
+ .cat-grid,.prod-grid,.works,.footer-grid{grid-template-columns:1fr !important}
+}
+</style>
+</head>
+<body>
+
+
+<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #FFFFFF;">
+
+<!-- ===== TOP BAR ===== -->
+<div style="background: #111111; color: #FFFFFF; font-size: 13px; padding: 7px 24px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <span>ทำด้วยใจ ส่งตรงเวลา · ผลิตเสร็จใน 3–4 วัน · มีบริการเร่งด่วน</span>
+  <a href="https://line.me/R/ti/p/@aunirakgift" style="display: inline-flex; align-items: center; gap: 6px; background: #06C755; color: #FFFFFF; border-radius: 999px; padding: 4px 14px; font-weight: 700;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>สั่งทำทาง LINE @aunirakgift</a>
+      <div class="soc foot"><a href="https://www.facebook.com/Pillow.AUN.I.RUK" aria-label="Facebook Pillow.AUN.I.RUK"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"></path></svg></a><a href="https://www.instagram.com/aunirakgift" aria-label="Instagram aunirakgift"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.5" fill="currentColor"></circle></svg></a><a href="mailto:[อีเมลร้าน]" aria-label="ส่งอีเมลหาเรา"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m3 7 9 6 9-6"></path></svg></a></div>
+  <a href="tel:0946715553" style="color: #FFFFFF; font-weight: 600;">โทร 094-671-5553</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="section" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 10px 64px; border-bottom: 1px solid #F2D5DE; position: sticky; top: 0; background: #FFFFFF; z-index: 10;">
+  <a href="#top" aria-label="อุ่นไอรัก หมอนของขวัญ @aunirakgift — หน้าแรก" style="display: flex; align-items: center; gap: 12px;">
+    <img src="images/logo-aunirak.png" alt="โลโก้ อุ่นไอรัก @aunirakgift" style="height: 64px; width: auto; display: block;">
+    <div style="display: none; flex-direction: column; line-height: 1.1"><span style="font-family: Athiti, sans-serif; font-weight: 700; font-size: 18px; color: rgb(17, 17, 17)">อุ่นไอรัก หมอนของขวัญ</span>
+    </div>
+  </a>
+  <nav class="nav-links" aria-label="เมนูหลัก" style="display: flex; align-items: center; gap: 22px; font-size: 14px;">
+    <a class="nav-link active" href="#top">หน้าแรก</a>
+    <div class="has-menu">
+      <a class="nav-link" href="#collections" aria-haspopup="true">สินค้าทั้งหมด <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+      <div class="menu" role="menu" aria-label="หมวดสินค้า">
+        <a href="#pillows"><img class="thumb" src="images/pillow-pastel.webp" alt=""><span>หมอนอิงสกรีน<small>ทุกขนาด พร้อมราคา เริ่ม 399.-</small></span></a>
+        <a href="#diecut"><img class="thumb" src="images/diecut-cats.webp" alt=""><span>หมอนไดคัท<small>ตัดตามรูปทรงจริง</small></span></a>
+        <a href="#blanket"><img class="thumb" src="images/blanket-couple.webp" alt=""><span>ผ้าห่มสกรีน<small>ผ้าห่มรูปคู่ รูปครอบครัว</small></span></a>
+        <a href="#mug"><img class="thumb" src="images/tumbler-congrats.webp" alt=""><span>แก้วสกรีน<small>แก้วทัมเบลอร์ / แก้วมัค</small></span></a>
+        <a href="#frame"><img class="thumb" src="images/frame-birthday.webp" alt=""><span>กรอบรูป<small>ภาพวาดการ์ตูนจากรูปถ่าย</small></span></a>
+        <a href="#b2b"><img class="thumb" src="images/work-heart-ily.webp" alt=""><span>ของพรีเมียม / แฟนคลับ<small>สั่งทำจำนวนมาก</small></span></a>
+      </div>
+    </div>
+    <a class="nav-link" href="#pillows">ขนาดและราคา</a>
+    <a class="nav-link" href="#works">ผลงาน</a>
+    <a class="nav-link" href="#howto">วิธีสั่งทำ</a>
+    <a class="nav-link" href="#reviews">รีวิว</a>
+    <a class="nav-link" href="#blog">บทความ</a>
+    <a class="nav-link" href="#contact">ติดต่อเรา</a>
+  </nav>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+    <a class="btn btn-line hdr-cta" href="https://line.me/R/ti/p/@aunirakgift" style="min-height: 44px; padding: 0 20px; font-size: 15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>สั่งทำผ่าน LINE</a>
+  </div>
+</header>
+<nav class="mnav" id="mnav" hidden aria-label="เมนูมือถือ">
+  <a href="#top">หน้าแรก</a>
+  <a href="#collections">สินค้าทั้งหมด</a>
+  <a href="#pillows">ขนาดและราคา</a>
+  <a href="#works">ผลงาน</a>
+  <a href="#howto">วิธีสั่งทำ</a>
+  <a href="#b2b">สั่งจำนวนมาก</a>
+  <a href="#reviews">รีวิว</a>
+  <a href="#blog">บทความ</a>
+  <a href="#contact">ติดต่อเรา</a>
+  <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift" style="margin-top: 8px;">สั่งทำผ่าน LINE @aunirakgift</a>
+  <a class="btn btn-outline" href="tel:0946715553">โทร 094-671-5553</a>
+  <div class="soc"><a href="https://www.facebook.com/Pillow.AUN.I.RUK" aria-label="Facebook Pillow.AUN.I.RUK"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"></path></svg></a><a href="https://www.instagram.com/aunirakgift" aria-label="Instagram aunirakgift"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="0.5" fill="currentColor"></circle></svg></a><a href="mailto:[อีเมลร้าน]" aria-label="ส่งอีเมลหาเรา"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m3 7 9 6 9-6"></path></svg></a></div>
+</nav>
+
+
+<!-- ===== HERO ===== -->
+<section id="top" class="hero section" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 48px; align-items: center; padding: 56px 64px 40px; background-color: #FFF7F9">
+  <div style="display: flex; flex-direction: column; gap: 22px; max-width: 560px;">
+    <span style="display: inline-flex; align-items: center; gap: 8px; color: #C2185B; font-weight: 600; font-size: 14px; letter-spacing: .08em;">หมอนสกรีนรูป · ของขวัญทำด้วยใจ</span>
+    <h1 class="h-display" style="font-size: 56px; font-weight: 700; color: #111111;">เปลี่ยนรูปที่รัก<br>ให้เป็น<span style="color: #C2185B;">หมอนของขวัญ</span><br>ที่กอดได้ทุกวัน</h1>
+    <p style="margin: 0; font-size: 18px; color: #555555; max-width: 480px;">หมอนอิง หมอนไดคัท ผ้าห่ม แก้ว และกรอบรูปสกรีนจากรูปของคุณลูกค้า ธุรกิจครัวเรือนที่ออกแบบและผลิตเองทุกขั้นตอน สั่งขั้นต่ำ 1 ชิ้น ผลิตเสร็จใน 3–4 วัน แจ้งวันส่งชัดเจนค่ะ</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px;">
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift"><svg class="arrow" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>ปรึกษาแบบฟรีทาง LINE</a>
+      <a class="btn btn-outline" href="#collections">ดูสินค้าทั้งหมด</a>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 10px; font-size: 14px; color: #555555;">
+      <span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>สั่งขั้นต่ำ 1 ชิ้น</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>ส่งแบบให้ดูก่อนผลิต</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>ส่งทั่วไทย</span>
+    </div>
+  </div>
+  <div class="hero-img" style="position: relative; height: 560px; border-radius: 28px; overflow: hidden; background: #FBE4EA;">
+    <img class="slide on" src="images/pillow-pastel.webp" alt="หมอนอิงพาสเทลลายน้องแมว น้องหมี และสาวน้อยกอดแมว"><img class="slide" src="images/diecut-cats.webp" alt="หมอนไดคัทรูปน้องแมวสองตัว ผลงานจริง"><img class="slide" src="images/work-heart-ily.webp" alt="หมอนหัวใจสกรีนโลโก้ ผลิตจำนวนมาก">
+    <div style="position: absolute; left: 24px; bottom: 24px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 14px; box-shadow: 0 10px 30px rgba(17,17,17,.12);">
+      <div style="width: 44px; height: 44px; border-radius: 12px; background: #FBE4EA; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+      <div style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 20px; color: #111111;">ผลิตเสร็จใน 3–4 วัน</span><span style="font-size: 13px; color: #555555;">แจ้งวันส่งชัดเจน ส่งตรงเวลาทุกออเดอร์</span></div>
+    </div>
+    <div class="dotwrap" role="group" aria-label="เลือกรูปสินค้า"><button class="dot active" aria-label="หมอนอิงพาสเทลลายน้องแมว น้องหมี และสาวน้อยกอดแมว"></button><button class="dot" aria-label="หมอนไดคัทรูปน้องแมวสองตัว ผลงานจริง"></button><button class="dot" aria-label="หมอนหัวใจสกรีนโลโก้ ผลิตจำนวนมาก"></button></div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<section class="trust section" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 28px 64px 40px; background: #FFF7F9;">
+  <div style="display: flex; gap: 14px; align-items: flex-start;">
+    <div style="width: 48px; height: 48px; border-radius: 999px; background: #FFFFFF; border: 1px solid #F2D5DE; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V7l-8-4Z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+    <div><div style="font-weight: 700; font-size: 16px;">งานพิมพ์คุณภาพ</div><div style="font-size: 14px; color: #555555;">สีสด คมชัด ไม่ลอก ซักได้ ใช้ได้นาน</div></div>
+  </div>
+  <div style="display: flex; gap: 14px; align-items: flex-start;">
+    <div style="width: 48px; height: 48px; border-radius: 999px; background: #FFFFFF; border: 1px solid #F2D5DE; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.6c0 5.2-8.8 11-8.8 11S3.2 13.8 3.2 8.6a4.6 4.6 0 0 1 8.8-2 4.6 4.6 0 0 1 8.8 2Z"></path></svg></div>
+    <div><div style="font-weight: 700; font-size: 16px;">ผ้านุ่ม กอดสบาย</div><div style="font-size: 14px; color: #555555;">ใยสังเคราะห์เกรดดี ไม่ยุบง่าย เหมาะกับทุกวัย</div></div>
+  </div>
+  <div style="display: flex; gap: 14px; align-items: flex-start;">
+    <div style="width: 48px; height: 48px; border-radius: 999px; background: #FFFFFF; border: 1px solid #F2D5DE; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="13" height="10" rx="1.5"></rect><path d="M16 10h3l2 3v4h-5"></path><circle cx="7.5" cy="18.5" r="1.5"></circle><circle cx="17.5" cy="18.5" r="1.5"></circle></svg></div>
+    <div><div style="font-weight: 700; font-size: 16px;">ส่งตรงเวลา</div><div style="font-size: 14px; color: #555555;">แจ้งวันส่งตั้งแต่ยืนยันออเดอร์ และรักษาคำพูดค่ะ</div></div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker" aria-label="จุดเด่นของเรา"><div class="track"><span><i aria-hidden="true"></i>ทำด้วยใจ ส่งตรงเวลา</span><span><i aria-hidden="true"></i>ผลิตเสร็จใน 3–4 วัน</span><span><i aria-hidden="true"></i>ส่งแบบให้ดูก่อนผลิตทุกชิ้น</span><span><i aria-hidden="true"></i>สั่งขั้นต่ำ 1 ชิ้น</span><span><i aria-hidden="true"></i>รับงานเร่งด่วน</span><span><i aria-hidden="true"></i>ส่งทั่วไทยพร้อมเลขพัสดุ</span><span><i aria-hidden="true"></i>ของพรีเมียมสั่งจำนวนมาก</span><span><i aria-hidden="true"></i>ทำด้วยใจ ส่งตรงเวลา</span><span><i aria-hidden="true"></i>ผลิตเสร็จใน 3–4 วัน</span><span><i aria-hidden="true"></i>ส่งแบบให้ดูก่อนผลิตทุกชิ้น</span><span><i aria-hidden="true"></i>สั่งขั้นต่ำ 1 ชิ้น</span><span><i aria-hidden="true"></i>รับงานเร่งด่วน</span><span><i aria-hidden="true"></i>ส่งทั่วไทยพร้อมเลขพัสดุ</span><span><i aria-hidden="true"></i>ของพรีเมียมสั่งจำนวนมาก</span></div></div>
+
+<!-- ===== COLLECTIONS ===== -->
+<section id="collections" class="section" style="padding: 72px 64px 48px; display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">หมวดสินค้า</span>
+      <h2 style="font-size: 36px; font-weight: 700;">ของขวัญสั่งทำของเรา — ออกแบบและผลิตเองทุกชิ้น</h2>
+    </div>
+    <span style="color: #555555; font-size: 15px;">คลิกแต่ละหมวดเพื่อดูขนาดและราคา — สั่งทำได้ที่ LINE @aunirakgift</span>
+  </div>
+  <div class="cat-grid" style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px;">
+    <a class="cat-card" data-rv="" href="#pillows"><div class="cat-img"><img src="images/pillow-pastel.webp" alt="หมอนอิงสกรีน"></div><div><div style="font-weight: 700; font-size: 17px;">หมอนอิงสกรีน</div><div style="font-size: 14px; color: #555555;">ทุกขนาด พร้อมราคา เริ่ม 399.-</div></div><span class="cat-link">ดูขนาดและราคา <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    <a class="cat-card" data-rv="" href="#diecut"><div class="cat-img"><img src="images/diecut-cats.webp" alt="หมอนไดคัท"></div><div><div style="font-weight: 700; font-size: 17px;">หมอนไดคัท</div><div style="font-size: 14px; color: #555555;">ตัดตามรูปทรงจริง</div></div><span class="cat-link">ดูขนาดและราคา <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    <a class="cat-card" data-rv="" href="#blanket"><div class="cat-img"><img src="images/blanket-couple.webp" alt="ผ้าห่มสกรีน"></div><div><div style="font-weight: 700; font-size: 17px;">ผ้าห่มสกรีน</div><div style="font-size: 14px; color: #555555;">ผ้าห่มรูปคู่ รูปครอบครัว</div></div><span class="cat-link">ดูขนาดและราคา <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    <a class="cat-card" data-rv="" href="#mug"><div class="cat-img"><img src="images/tumbler-congrats.webp" alt="แก้วสกรีน"></div><div><div style="font-weight: 700; font-size: 17px;">แก้วสกรีน</div><div style="font-size: 14px; color: #555555;">แก้วทัมเบลอร์ / แก้วมัค</div></div><span class="cat-link">ดูขนาดและราคา <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    <a class="cat-card" data-rv="" href="#frame"><div class="cat-img"><img src="images/frame-birthday.webp" alt="กรอบรูป"></div><div><div style="font-weight: 700; font-size: 17px;">กรอบรูป</div><div style="font-size: 14px; color: #555555;">ภาพวาดการ์ตูนจากรูปถ่าย</div></div><span class="cat-link">ดูขนาดและราคา <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+  </div>
+</section>
+
+<!-- ===== SIZES & PRICES ===== -->
+
+
+<!-- ===== FEATURE BAND ===== -->
+<section id="pillows" class="section" style="padding: 56px 64px 72px; display: flex; flex-direction: column; gap: 28px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">01 · หมอนอิงสกรีน</span>
+      <h2 style="font-size: 36px; font-weight: 700;">หมอนสกรีนรูป — 7 ขนาด ราคาชัดเจน</h2>
+    </div>
+    <span style="color: #555555; font-size: 15px;">ราคาปลอกพร้อมหมอน สกรีน 1 ด้าน · เพิ่มด้านหลัง +100 บาท · ถอดซักได้</span>
+  </div>
+  <div class="price-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;">
+    <div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="72" height="44" viewBox="0 0 72 44" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 Q36 2 64 6 Q68 22 64 38 Q36 42 8 38 Q4 22 8 6Z"></path></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนอิง</div><div style="font-size: 14px; color: #555555;">15×15 นิ้ว · 36×36 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">399<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="72" height="44" viewBox="0 0 72 44" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 Q36 2 64 6 Q68 22 64 38 Q36 42 8 38 Q4 22 8 6Z"></path></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนอิง</div><div style="font-size: 14px; color: #555555;">15×20 นิ้ว · 36×48 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">459<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="72" height="44" viewBox="0 0 72 44" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 Q36 2 64 6 Q68 22 64 38 Q36 42 8 38 Q4 22 8 6Z"></path></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนอิง</div><div style="font-size: 14px; color: #555555;">20×20 นิ้ว · 48×48 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">499<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="96" height="40" viewBox="0 0 96 40" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="88" height="28" rx="14"></rect></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนอิง</div><div style="font-size: 14px; color: #555555;">15×30 นิ้ว · 36×73 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">549<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="72" height="44" viewBox="0 0 72 44" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 Q36 2 64 6 Q68 22 64 38 Q36 42 8 38 Q4 22 8 6Z"></path></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนหนุนมาตรฐาน</div><div style="font-size: 14px; color: #555555;">20×30 นิ้ว · 48×73 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">699<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div><div style="font-size: 12px; color: #C2185B; font-weight: 600;">เฉพาะปลอก 399.-</div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="96" height="40" viewBox="0 0 96 40" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="88" height="28" rx="14"></rect></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนข้างมาตรฐาน</div><div style="font-size: 14px; color: #555555;">15×45 นิ้ว · 38×114 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">699<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div><div style="font-size: 12px; color: #C2185B; font-weight: 600;">สกรีน 2 ด้าน · เฉพาะปลอก 499.-</div></div><div class="price-card" data-rv=""><div style="height: 48px; display: flex; align-items: center;"><svg width="96" height="40" viewBox="0 0 96 40" fill="none" stroke="#111111" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="88" height="28" rx="14"></rect></svg></div><div style="font-weight: 700; font-size: 17px;">หมอนบอดี้</div><div style="font-size: 14px; color: #555555;">19×49 นิ้ว · 48×124 ซม.</div><div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 28px; color: #C2185B; line-height: 1;">999<span style="font-size: 14px; font-weight: 600; color: #111111; margin-left: 4px;">บาท</span></div><div style="font-size: 12px; color: #C2185B; font-weight: 600;">เฉพาะปลอก 499.-</div></div>
+  </div>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift">สั่งทำขนาดที่ต้องการทาง LINE</a>
+    <span style="font-size: 14px; color: #555555;">สกรีนรูปคน สัตว์เลี้ยง หรือลายที่ออกแบบเอง — ส่งรูปมาให้เราทำแบบฟรีค่ะ</span>
+  </div>
+</section><section id="diecut" class="cat-sec section rev" style="background: #FFF7F9;">
+  <div class="media" data-rv=""><img src="images/diecut-cats.webp" alt="หมอนไดคัทรูปน้องแมวสองตัว ผลงานจริง" style="width: 100%; height: 100%; object-fit: scale-down; display: block; background-color: #ffffff"></div>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">02 · หมอนไดคัท — สินค้าขายดี</span>
+    <h2 style="font-size: 36px; font-weight: 700;">หมอนหน้าตัวเอง<br>ของขวัญที่ไม่มีใครซ้ำ</h2>
+    <p style="margin: 0; color: #555555; font-size: 16px; max-width: 480px;">ส่งรูปมา เราตัดพื้นหลัง จัดไฟล์ และส่งแบบให้ดูก่อนผลิตทุกชิ้น เหมาะกับของขวัญเกษียณ รับปริญญา วันเกิด และของที่ระลึกบริษัทค่ะ</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;"><span class="chip">[ขนาด] นิ้ว — <b>[ราคา].-</b></span><span class="chip">[ขนาด] นิ้ว — <b>[ราคา].-</b></span></div>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;"><a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>ส่งรูปให้เราทำแบบ</a></div>
+  </div>
+</section>
+
+<!-- ===== BLANKET ===== -->
+
+
+<!-- ===== MUG ===== -->
+<section id="blanket" class="cat-sec section">
+  <div class="media" data-rv=""><img src="images/blanket-couple.webp" alt="ผ้าห่มสกรีนรูปคู่รัก" style="width: 100%; height: 100%; object-fit: scale-down; display: block; background-color: #ffffff"></div>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">03 · ผ้าห่มสกรีน</span>
+    <h2 style="font-size: 36px; font-weight: 700;">ผ้าห่มสกรีนรูปตามแบบ</h2>
+    <p style="margin: 0; color: #555555; font-size: 16px; max-width: 480px;">ผ้าห่มสกรีนรูปเต็มผืน ผ้านุ่ม อุ่นสบาย เหมาะเป็นของขวัญคู่รัก ครอบครัว และวันครบรอบ ซักเครื่องได้ สีไม่ลอกค่ะ</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;"><span class="chip">[ขนาด] นิ้ว — <b>[ราคา].-</b></span><span class="chip">[ขนาด] นิ้ว — <b>[ราคา].-</b></span></div>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;"><a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>สั่งทำผ้าห่ม</a></div>
+  </div>
+</section><section id="mug" class="cat-sec section rev" style="background-color: #FFF7F9">
+  <div class="media" data-rv=""><img src="images/tumbler-congrats.webp" alt="แก้วทัมเบลอร์สกรีนรูปคู่พร้อมหลอด" style="width: 100%; height: 100%; object-fit: scale-down; display: block; background-color: #ffffff"></div>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">04 · แก้วสกรีน</span>
+    <h2 style="font-size: 36px; font-weight: 700;">แก้วสกรีนรูปตามแบบ</h2>
+    <p style="margin: 0; color: #555555; font-size: 16px; max-width: 480px;">แก้วทัมเบลอร์และแก้วมัคสกรีนรูปกับข้อความ ของขวัญรับปริญญา แสดงความยินดี หรือของที่ระลึกทีมงาน สกรีนคมชัด กันน้ำค่ะ</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;"><span class="chip">ทัมเบลอร์ — <b>[ราคา].-</b></span><span class="chip">แก้วมัค — <b>[ราคา].-</b></span></div>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;"><a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>สั่งทำแก้วสกรีน</a></div>
+  </div>
+</section>
+
+<!-- ===== FRAME ===== -->
+<section id="frame" class="cat-sec section">
+  <div class="media" data-rv=""><img src="images/frame-birthday.webp" alt="กรอบรูปภาพวาดการ์ตูนวันเกิด" style="width: 100%; height: 100%; object-fit: scale-down; display: block; background-color: #ffffff"></div>
+  <div style="display: flex; flex-direction: column; gap: 16px;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">05 · กรอบรูปสกรีน</span>
+    <h2 style="font-size: 36px; font-weight: 700;">กรอบรูปสกรีนรูปตามแบบ</h2>
+    <p style="margin: 0; color: #555555; font-size: 16px; max-width: 480px;">ส่งรูปถ่ายมา เราวาดเป็นภาพการ์ตูนและใส่กรอบพร้อมข้อความ ของขวัญวันเกิด เกษียณ หรือโอกาสพิเศษที่เก็บไว้ได้นานค่ะ</p>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;"><span class="chip">[ขนาด] — <b>[ราคา].-</b></span></div>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;"><a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>สั่งทำกรอบรูป</a></div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO (real production photos) ===== -->
+<section id="works" class="section" style="padding: 64px 64px 72px; background: #FFF7F9; display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">ผลงานที่เคยผลิต</span>
+      <h2 style="font-size: 36px; font-weight: 700;">งานจริงจากโรงงานของเรา</h2>
+    </div>
+    <a href="https://www.facebook.com/Pillow.AUN.I.RUK" style="color: #C2185B; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; min-height: 44px;">ดูผลงานเพิ่มเติมใน Facebook <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+  <div class="works" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;">
+    <div class="work-tile" data-rv=""><img src="images/work-heart-ily.webp" alt="หมอนหัวใจสีชมพูสกรีน ILY ผลิตจำนวนมาก"><div class="cap">หมอนหัวใจสกรีนโลโก้ — ของแจกแฟนคลับ</div></div>
+    <div class="work-tile" data-rv=""><img src="images/work-apex.webp" alt="หมอนสกรีนลาย APEX สีม่วง ของพรีเมียมแบรนด์"><div class="cap">หมอนสกรีนของพรีเมียมแบรนด์</div></div>
+    <div class="work-tile" data-rv=""><img src="images/diecut-cats.webp" alt="หมอนไดคัทรูปน้องแมวสองตัว"><div class="cap">หมอนไดคัทรูปสัตว์เลี้ยง</div></div>
+    <div class="work-tile" data-rv=""><img src="images/work-cartoon-pack.webp" alt="หมอนไดคัทตัวการ์ตูนแพ็กถุงพร้อมส่ง จำนวนมาก"><div class="cap">หมอนไดคัทตัวการ์ตูน — แพ็กพร้อมแจก</div></div>
+  </div>
+</section>
+
+<!-- ===== B2B ===== -->
+<section id="b2b" class="section" style="padding: 72px 64px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center;">
+  <div style="border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; background: #FBE4EA;">
+    <img src="images/work-apex.webp" alt="หมอนสกรีนโลโก้แบรนด์ APEX ผลิตจำนวนมาก" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">สำหรับธุรกิจ แบรนด์ และแฟนคลับ</span>
+    <h2 style="font-size: 36px; font-weight: 700;">สั่งทำจำนวนมาก<br>ราคาคุ้ม ส่งทันงาน</h2>
+    <p style="margin: 0; color: #555555; font-size: 16px;">หมอนเล็ก หมอนไดคัท ผ้าห่ม สำหรับของพรีเมียม ของแจกอีเวนต์ หรือ merch ศิลปิน เราช่วยจัดไฟล์ให้ และแจ้งกำหนดส่งชัดเจนตั้งแต่ต้น เหมาะกับงานที่มีวันจัดแน่นอนค่ะ</p>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+      <div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg><span>ราคาพิเศษตามจำนวน</span></div>
+      <div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg><span>ทำตัวอย่างก่อนผลิตจริง</span></div>
+      <div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg><span>ออกใบเสนอราคา / ใบกำกับภาษี</span></div>
+      <div style="display: flex; gap: 10px; align-items: flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 6 9 17l-5-5"></path></svg><span>แพ็กแยกชิ้นพร้อมแจก</span></div>
+    </div>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 6px;"><a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift">ขอใบเสนอราคาทาง LINE</a><a class="btn btn-outline" href="tel:0946715553">โทร 094-671-5553</a></div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews" class="section" style="padding: 64px 64px 72px; background: #FFF7F9; display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: flex; flex-direction: column; gap: 8px; align-items: center; text-align: center;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">รีวิวจากคุณลูกค้าจริง</span>
+    <h2 style="font-size: 36px; font-weight: 700;">ของขวัญที่ส่งถึงมือ แล้วส่งต่อความอุ่นใจ</h2>
+  </div>
+  <div class="reviews" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;">
+    
+      <article class="review-card" data-rv="">
+        <div style="display: flex; gap: 2px;" aria-label="5 ดาว"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p style="margin: 0; font-size: 16px; color: #111111;">[รีวิวจริงจากลูกค้า — เช่น สั่งหมอนไดคัทรูปคุณพ่อเป็นของขวัญเกษียณ ได้ของตรงวันที่แจ้งเลย คุณพ่อชอบมาก]</p>
+        <div style="display: flex; align-items: center; gap: 12px; margin-top: auto;">
+          <div style="width: 44px; height: 44px; border-radius: 999px; background: #FBE4EA; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #C2185B; flex-shrink: 0;">ก</div>
+          <div style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 700;">[ชื่อลูกค้า]</span><span style="font-size: 13px; color: #555555;">ของขวัญเกษียณ</span></div>
+        </div>
+      </article>
+    
+      <article class="review-card" data-rv="">
+        <div style="display: flex; gap: 2px;" aria-label="5 ดาว"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p style="margin: 0; font-size: 16px; color: #111111;">[รีวิวจริงจากลูกค้า — เช่น สั่งผ้าห่มรูปคู่ให้แฟนวันครบรอบ สีสวย ผ้านุ่มกว่าที่คิด]</p>
+        <div style="display: flex; align-items: center; gap: 12px; margin-top: auto;">
+          <div style="width: 44px; height: 44px; border-radius: 999px; background: #FBE4EA; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #C2185B; flex-shrink: 0;">ข</div>
+          <div style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 700;">[ชื่อลูกค้า]</span><span style="font-size: 13px; color: #555555;">ของขวัญครบรอบ</span></div>
+        </div>
+      </article>
+    
+      <article class="review-card" data-rv="">
+        <div style="display: flex; gap: 2px;" aria-label="5 ดาว"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p style="margin: 0; font-size: 16px; color: #111111;">[รีวิวจริงจากลูกค้า — เช่น สั่งหมอนเล็ก 200 ใบ แจกงานอีเวนต์ ทีมงานช่วยจัดไฟล์ให้ ส่งทันงานพอดี]</p>
+        <div style="display: flex; align-items: center; gap: 12px; margin-top: auto;">
+          <div style="width: 44px; height: 44px; border-radius: 999px; background: #FBE4EA; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #C2185B; flex-shrink: 0;">ค</div>
+          <div style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 700;">[ชื่อบริษัท / แบรนด์]</span><span style="font-size: 13px; color: #555555;">ของพรีเมียมแจกงานอีเวนต์</span></div>
+        </div>
+      </article>
+    
+  </div>
+
+  <div style="display: flex; justify-content: center;"><a class="btn btn-outline" href="https://www.facebook.com/Pillow.AUN.I.RUK" style="gap: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"></path></svg>ดูรีวิวจริงเพิ่มเติมใน Facebook</a></div>
+</section>
+
+<!-- ===== HOW TO ORDER ===== -->
+<section id="howto" class="section" style="padding: 64px 64px; background: #FBE4EA; display: flex; flex-direction: column; gap: 36px;">
+  <div style="display: flex; flex-direction: column; gap: 8px; align-items: center; text-align: center;">
+    <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">ขั้นตอนสั่งทำ</span>
+    <h2 style="font-size: 36px; font-weight: 700;">สั่งง่าย 4 ขั้นตอน ได้ของตรงเวลา</h2>
+    <p style="margin: 6px 0 0; color: #555555; max-width: 560px;">เว็บนี้เป็นหน้าโชว์สินค้า การสั่งทำทุกออเดอร์คุยเรื่องแบบและยืนยันกันทาง LINE เพื่อให้ได้งานตรงใจที่สุดค่ะ</p>
+  </div>
+  <div class="steps" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;">
+    <div data-rv="" style="background: #FFFFFF; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;"><div class="step-num">1</div><div style="font-weight: 700; font-size: 18px;">ทัก LINE ส่งรูป</div><div style="font-size: 15px; color: #555555;">แอด LINE @aunirakgift ส่งรูปที่ต้องการ เลือกขนาดและชนิดหมอน</div></div>
+    <div data-rv="" style="background: #FFFFFF; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;"><div class="step-num">2</div><div style="font-weight: 700; font-size: 18px;">รับแบบและยืนยัน</div><div style="font-size: 15px; color: #555555;">เราจัดไฟล์และส่งแบบให้ดูก่อน ปรับแก้ได้จนพอใจ พร้อมแจ้งราคาและวันส่ง</div></div>
+    <div data-rv="" style="background: #FFFFFF; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;"><div class="step-num">3</div><div style="font-weight: 700; font-size: 18px;">ผลิต 3–4 วัน</div><div style="font-size: 15px; color: #555555;">พิมพ์ เย็บ ยัดใย ตรวจคุณภาพทุกชิ้นก่อนแพ็ก</div></div>
+    <div data-rv="" style="background: #FFFFFF; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;"><div class="step-num">4</div><div style="font-weight: 700; font-size: 18px;">จัดส่งตรงเวลา</div><div style="font-size: 15px; color: #555555;">ส่งทั่วไทย พร้อมเลขพัสดุ ถึงมือตามวันที่แจ้งค่ะ</div></div>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog" class="section" style="padding: 64px 64px 72px; display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span style="color: #C2185B; font-weight: 600; font-size: 13px; letter-spacing: .12em;">บทความ</span>
+      <h2 style="font-size: 36px; font-weight: 700;">ไอเดียของขวัญและเรื่องน่ารู้เกี่ยวกับหมอนสั่งทำ</h2>
+    </div>
+    <a href="#blog" style="color: #C2185B; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; min-height: 44px;">ดูบทความทั้งหมด <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+  <div class="reviews" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;">
+    
+      <a href="#blog" class="prod-card" data-rv="" style="cursor: pointer;">
+        <div class="prod-img" style="aspect-ratio: 16/10;"><img src="images/diecut-team.webp" alt="หมอนไดคัทหน้าคน"></div>
+        <div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 13px; color: #C2185B; font-weight: 600;">ไอเดียของขวัญ</div>
+          <div style="font-weight: 700; font-size: 18px; line-height: 1.35; color: #111111;">[หัวข้อบทความ — เช่น 10 ไอเดียของขวัญเกษียณที่ไม่ซ้ำใคร]</div>
+          <div style="font-size: 14px; color: #555555;">[คำโปรยสั้น ๆ 1–2 บรรทัด]</div>
+        </div>
+      </a>
+    
+      <a href="#blog" class="prod-card" data-rv="" style="cursor: pointer;">
+        <div class="prod-img" style="aspect-ratio: 16/10;"><img src="images/work-heart-ily.webp" alt="หมอนหัวใจสกรีนโลโก้"></div>
+        <div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 13px; color: #C2185B; font-weight: 600;">สำหรับธุรกิจ</div>
+          <div style="font-weight: 700; font-size: 18px; line-height: 1.35; color: #111111;">[หัวข้อบทความ — เช่น สั่งทำหมอนพรีเมียมแจกลูกค้า ต้องเตรียมอะไรบ้าง]</div>
+          <div style="font-size: 14px; color: #555555;">[คำโปรยสั้น ๆ 1–2 บรรทัด]</div>
+        </div>
+      </a>
+    
+      <a href="#blog" class="prod-card" data-rv="" style="cursor: pointer;">
+        <div class="prod-img" style="aspect-ratio: 16/10;"><img src="images/blanket-couple.webp" alt="ผ้าห่มสกรีนรูปคู่"></div>
+        <div style="padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 13px; color: #C2185B; font-weight: 600;">เรื่องน่ารู้</div>
+          <div style="font-weight: 700; font-size: 18px; line-height: 1.35; color: #111111;">[หัวข้อบทความ — เช่น เตรียมไฟล์รูปอย่างไรให้สกรีนออกมาคมชัด]</div>
+          <div style="font-size: 14px; color: #555555;">[คำโปรยสั้น ๆ 1–2 บรรทัด]</div>
+        </div>
+      </a>
+    
+  </div>
+</section>
+
+<!-- ===== BIG LINE CTA ===== -->
+<section class="line-cta section" style="padding: 0 64px 80px;">
+  <div style="background: #C2185B; color: #FFFFFF; border-radius: 28px; padding: 56px 48px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px;">
+    <span style="font-weight: 600; font-size: 14px; letter-spacing: .12em; color: #FBE4EA;">พร้อมสั่งทำหรือยังคะ</span>
+    <h2 style="font-size: 44px; font-weight: 700; color: #FFFFFF; max-width: 760px;">ส่งรูปมาที่ LINE แล้วให้เราทำแบบให้ดูฟรี</h2>
+    <p style="margin: 0; color: #FBE4EA; font-size: 17px; max-width: 560px;">ตอบไวทุกวัน แจ้งราคาและวันส่งชัดเจนก่อนผลิต ทำด้วยใจ ส่งตรงเวลาค่ะ</p>
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift" style="min-height: 72px; padding: 0 44px; font-size: 24px; border-radius: 999px; box-shadow: 0 14px 34px rgba(0,0,0,.22); margin-top: 8px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>แอด LINE @aunirakgift</a>
+    <a href="tel:0946715553" style="color: #FFFFFF; font-weight: 600; font-size: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"></path></svg>หรือโทร 094-671-5553</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contact" class="footer section" style="background: #111111; color: #FFFFFF; padding: 56px 64px 28px; display: flex; flex-direction: column; gap: 40px;">
+  <div class="footer-grid" style="display: grid; grid-template-columns: 1.3fr 0.8fr 0.8fr 1.1fr 1.4fr; gap: 36px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 6px;"><img src="images/logo-aunirak.png" alt="โลโก้ อุ่นไอรัก @aunirakgift" style="height: 56px; width: auto; display: block;"></div>
+        <div style="font-family: 'Athiti', sans-serif; font-weight: 700; font-size: 22px;">อุ่นไอรัก หมอนของขวัญ</div>
+      </div>
+      <p style="margin: 0; color: #D9D9D9; font-size: 14px; max-width: 360px;">หมอนสกรีน หมอนไดคัท ผ้าห่ม และปลอกหมอนสั่งทำตามแบบ สำหรับของขวัญทุกโอกาสและงานสั่งทำจำนวนมาก ทำด้วยใจ ส่งตรงเวลา</p>
+      <a class="btn btn-line" href="https://line.me/R/ti/p/@aunirakgift" style="align-self: flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>LINE @aunirakgift</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-weight: 700; font-size: 15px; letter-spacing: .06em; color: #F2A0B5;">สินค้า</div>
+      <a href="#pillows">หมอนอิงสกรีน</a><a href="#diecut">หมอนไดคัท</a><a href="#blanket">ผ้าห่มสกรีน</a><a href="#mug">แก้วสกรีน</a><a href="#frame">กรอบรูป</a><a href="#b2b">ของพรีเมียม / สั่งจำนวนมาก</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-weight: 700; font-size: 15px; letter-spacing: .06em; color: #F2A0B5;">เมนู</div>
+      <a href="#top">หน้าแรก</a><a href="#pillows">ขนาดและราคา</a><a href="#works">ผลงาน</a><a href="#howto">วิธีสั่งทำ</a><a href="#reviews">รีวิว</a><a href="#blog">บทความ</a><a href="#contact">ติดต่อเรา</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-weight: 700; font-size: 15px; letter-spacing: .06em; color: #F2A0B5;">ติดต่อเรา</div>
+      <a href="https://line.me/R/ti/p/@aunirakgift" style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#06C755" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg>LINE: @aunirakgift</a>
+      <a href="tel:0946715553" style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2A0B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"></path></svg>โทร: 094-671-5553</a>
+      <a href="https://www.facebook.com/Pillow.AUN.I.RUK" style="display: inline-flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2A0B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z"></path></svg>Facebook: Pillow.AUN.I.RUK</a>
+      <div style="display: flex; gap: 8px; align-items: flex-start; color: #D9D9D9; font-size: 14px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2A0B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>[ที่อยู่ร้าน / โรงงาน]<br>[เขต/อำเภอ จังหวัด รหัสไปรษณีย์]</span></div>
+      <div style="display: flex; gap: 8px; align-items: flex-start; color: #D9D9D9; font-size: 14px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2A0B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px;"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span>เวลาทำการ: [วัน–วัน เวลา–เวลา]</span></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-weight: 700; font-size: 15px; letter-spacing: .06em; color: #F2A0B5;">แผนที่ร้าน</div>
+      <div style="border-radius: 16px; overflow: hidden; background: #FBE4EA; height: 220px; position: relative;">
+        <div class="placeholder" style="font-size: 14px; gap: 8px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+          <span>[Google Maps embed — วางโค้ด iframe ตรงนี้ตอนทำเว็บจริง]</span>
+        </div>
+      </div>
+      <a href="https://maps.google.com/?q=[ชื่อร้าน]" style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; min-height: 44px; color: #F2A0B5;">เปิดใน Google Maps <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+    </div>
+  </div>
+  <div style="border-top: 1px solid #333333; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #D9D9D9;">
+    <span>© 2026 อุ่นไอรัก หมอนของขวัญ · aunirakgift</span>
+    <span>ทำด้วยใจ ส่งตรงเวลา</span>
+  </div>
+</footer>
+
+<!-- ===== FLOATING LINE BUTTON ===== -->
+<a class="float-line" href="https://line.me/R/ti/p/@aunirakgift" aria-label="ทัก LINE @aunirakgift"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 5.8-3.4 7.9-5.8 1.4-1.6 2-3.2 2-5.2C22 6.6 17.5 3 12 3Z"></path></svg><span>ทัก LINE สั่งทำ</span></a>
+
+</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js-ready');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // reveal on scroll
+  var rv=document.querySelectorAll('[data-rv]');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){e.target.style.transitionDelay=((i%6)*50)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    rv.forEach(function(el){io.observe(el);});
+  } else { rv.forEach(function(el){el.classList.add('in');}); }
+  // hero slider
+  var slides=document.querySelectorAll('.hero-img .slide');
+  var dots=document.querySelectorAll('.hero-img .dot');
+  var cur=0,timer=null;
+  function go(i){cur=i%slides.length;slides.forEach(function(s,k){s.classList.toggle('on',k===cur);});dots.forEach(function(d,k){d.classList.toggle('active',k===cur);});}
+  dots.forEach(function(d,k){d.addEventListener('click',function(){if(timer){clearInterval(timer);timer=null;}go(k);});});
+  if(slides.length>1 && !reduce){timer=setInterval(function(){go(cur+1);},4500);}
+  // mobile menu
+  var burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+  if(burger&&mnav){burger.addEventListener('click',function(){var open=mnav.hasAttribute('hidden');if(open){mnav.removeAttribute('hidden');}else{mnav.setAttribute('hidden','');}burger.setAttribute('aria-expanded',open?'true':'false');});
+    mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mnav.setAttribute('hidden','');burger.setAttribute('aria-expanded','false');});});}
+})();
+</script>
+</body>
+</html>
