@@ -2,6 +2,14 @@
 <html lang="th">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LBLML1R2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M2LBLML1R2');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 // ผู้ใช้มือถือ (จอแคบ) ให้ไปหน้าเวอร์ชันมือถือ ยกเว้นขอดูหน้า desktop เอง (?desktop)
@@ -539,6 +547,12 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
   if(burger&&mnav){burger.addEventListener('click',function(){var open=mnav.hasAttribute('hidden');if(open){var hd=document.querySelector('header');mnav.style.top=(hd?hd.getBoundingClientRect().bottom:0)+'px';mnav.removeAttribute('hidden');}else{mnav.setAttribute('hidden','');}burger.setAttribute('aria-expanded',open?'true':'false');});
     mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mnav.setAttribute('hidden','');burger.setAttribute('aria-expanded','false');});});}
 })();
+</script>
+<script>
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href*="lin.ee"], a[href^="tel:"]');
+  if(a && window.gtag){ gtag('event', a.href.indexOf('tel:')===0 ? 'phone_click' : 'line_click', {page_path: location.pathname}); }
+});
 </script>
 </body>
 </html>

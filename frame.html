@@ -2,6 +2,14 @@
 <html lang="th">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LBLML1R2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M2LBLML1R2');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>กรอบรูปการ์ตูน วาดภาพจากรูปถ่าย ใส่กรอบพร้อมข้อความ | อุ่นไอรัก</title>
 <meta name="description" content="กรอบรูปการ์ตูนสั่งทำ ส่งรูปถ่ายมา เราวาดเป็นภาพการ์ตูนและใส่กรอบพร้อมข้อความ ของขวัญวันเกิด วันเกษียณ รับปริญญา เก็บไว้ได้นาน ทักไลน์ @aunirak ได้เลยค่ะ">
@@ -129,5 +137,11 @@ footer a{color:#D9D9D9}
     <span>846/71 ประชาอุทิศ 44 ซอย 5 แขวงบางมด เขตทุ่งครุ กรุงเทพมหานคร 10140</span>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href*="lin.ee"], a[href^="tel:"]');
+  if(a && window.gtag){ gtag('event', a.href.indexOf('tel:')===0 ? 'phone_click' : 'line_click', {page_path: location.pathname}); }
+});
+</script>
 </body>
 </html>

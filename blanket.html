@@ -2,6 +2,14 @@
 <html lang="th">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LBLML1R2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M2LBLML1R2');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ผ้าห่มสกรีนรูป สั่งทำตามแบบ เริ่ม 690 บาท ซักเครื่องได้ | อุ่นไอรัก</title>
 <meta name="description" content="ผ้าห่มสกรีนรูปจากรูปถ่ายของคุณ ผ้าห่มรูปคู่ รูปครอบครัว รูปแต่งงาน 4 ขนาด เริ่ม 690 บาท ผ้านุ่ม ซักเครื่องได้ สีไม่ลอก ผลิต 3–4 วัน ทักไลน์ @aunirak ค่ะ">
@@ -155,5 +163,11 @@ footer a{color:#D9D9D9}
     <span>846/71 ประชาอุทิศ 44 ซอย 5 แขวงบางมด เขตทุ่งครุ กรุงเทพมหานคร 10140</span>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href*="lin.ee"], a[href^="tel:"]');
+  if(a && window.gtag){ gtag('event', a.href.indexOf('tel:')===0 ? 'phone_click' : 'line_click', {page_path: location.pathname}); }
+});
+</script>
 </body>
 </html>
