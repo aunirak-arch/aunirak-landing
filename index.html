@@ -93,6 +93,13 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
 .cat-card:hover img{transform:scale(1.06)}
 .work-tile .cap{transform:translateY(6px);opacity:.92;transition:transform .3s ease,opacity .3s ease}
 .work-tile:hover .cap{transform:none;opacity:1}
+.works-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px}
+.works-track::-webkit-scrollbar{display:none}
+.works-track .work-tile{flex:0 0 calc(25% - 17px);scroll-snap-align:start}
+.wbtn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid #F2D5DE;background:rgba(255,255,255,.92);color:#C2185B;font-size:24px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(17,17,17,.14);z-index:2}
+.wbtn:hover{background:#FFFFFF}
+@media (max-width:1024px){.works-track .work-tile{flex-basis:calc(50% - 11px)}}
+@media (max-width:640px){.works-track .work-tile{flex-basis:86%}}
 .step-num{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease}
 .steps > div:hover .step-num{transform:scale(1.12) rotate(-6deg);box-shadow:0 8px 20px rgba(194,24,91,.3)}
 .btn-line{position:relative;overflow:hidden}
@@ -415,11 +422,23 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
     </div>
     <div style="display: flex; gap: 24px; flex-wrap: wrap;"><a href="https://www.facebook.com/Pillow.AUN.I.RUK/reviews" style="color: #C2185B; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; min-height: 44px;">อ่านรีวิวจากคุณลูกค้า <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a href="https://www.facebook.com/Pillow.AUN.I.RUK" style="color: #C2185B; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; min-height: 44px;">ดูผลงานเพิ่มเติมใน Facebook <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
   </div>
-  <div class="works" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;">
-    <div class="work-tile" data-rv=""><img src="images/หมอนไดคัท-5.webp" alt="หมอนไดคัทมาสคอตแบรนด์ผลิตจำนวนมาก" width="800" height="526" loading="lazy"><div class="cap">หมอนไดคัทมาสคอตแบรนด์ — ของแจกอีเวนต์</div></div>
-    <div class="work-tile" data-rv=""><img src="images/ผ้าห่มสกรีน-7.webp" alt="ผ้าห่มสกรีนรูปแมวสีเหลือง สั่งทำจากรูปสัตว์เลี้ยง" width="800" height="1200" loading="lazy"><div class="cap">ผ้าห่มสกรีนรูปแมว — ของขวัญคนรักสัตว์</div></div>
-    <div class="work-tile" data-rv=""><img src="images/หมอนโลโก้-1.webp" alt="หมอนทรงกลมสกรีนโลโก้ชมรมเทนนิส" width="800" height="533" loading="lazy"><div class="cap">หมอนโลโก้ทรงกลม — ของที่ระลึกชมรม</div></div>
-    <div class="work-tile" data-rv=""><img src="images/หมอนสกรีนรูป-4.webp" alt="หมอนสกรีนรูปศิลปิน ของพรีเมียมแฟนคลับ" width="800" height="600" loading="lazy"><div class="cap">หมอนสกรีนรูปศิลปิน — ของแจกแฟนคลับ</div></div>
+  <div style="position: relative;">
+    <div class="works-track" id="worksTrack">
+      <div class="work-tile" data-rv=""><img src="images/หมอนไดคัท-5.webp" alt="หมอนไดคัทมาสคอตแบรนด์ผลิตจำนวนมาก" width="800" height="526" loading="lazy"><div class="cap">หมอนไดคัทมาสคอตแบรนด์ — ของแจกอีเวนต์</div></div>
+      <div class="work-tile" data-rv=""><img src="images/ผ้าห่มสกรีน-7.webp" alt="ผ้าห่มสกรีนรูปแมวสีเหลือง สั่งทำจากรูปสัตว์เลี้ยง" width="800" height="1200" loading="lazy"><div class="cap">ผ้าห่มสกรีนรูปแมว — ของขวัญคนรักสัตว์</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนโลโก้-1.webp" alt="หมอนทรงกลมสกรีนโลโก้ชมรมเทนนิส" width="800" height="533" loading="lazy"><div class="cap">หมอนโลโก้ทรงกลม — ของที่ระลึกชมรม</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนสกรีนรูป-4.webp" alt="หมอนสกรีนรูปศิลปิน ของพรีเมียมแฟนคลับ" width="800" height="600" loading="lazy"><div class="cap">หมอนสกรีนรูปศิลปิน — ของแจกแฟนคลับ</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนไดคัท-1.webp" alt="หมอนไดคัทหน้าคนถือดอกทานตะวัน ของขวัญวันเกษียณ" width="1536" height="1024" loading="lazy"><div class="cap">หมอนไดคัทหน้าคน — ของขวัญวันเกษียณ</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนแมว-1.webp" alt="หมอนไดคัทรูปน้องแมว สั่งทำจากรูปถ่ายสัตว์เลี้ยง" width="1536" height="1024" loading="lazy"><div class="cap">หมอนไดคัทน้องแมว — จากรูปถ่ายจริง</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนหมา-1.webp" alt="หมอนไดคัทรูปน้องหมา ของขวัญคนรักสุนัข" width="800" height="533" loading="lazy"><div class="cap">หมอนไดคัทน้องหมา — ของขวัญคนรักสุนัข</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนไดคัท-10.webp" alt="หมอนไดคัทบัณฑิตชุดครุย ของขวัญรับปริญญา" width="1108" height="1478" loading="lazy"><div class="cap">หมอนไดคัทชุดครุย — รับปริญญา</div></div>
+      <div class="work-tile" data-rv=""><img src="images/ผ้าห่มสกรีน-2.webp" alt="ผ้าห่มสกรีนรูปคู่บ่าวสาว ของขวัญแต่งงาน" width="800" height="1065" loading="lazy"><div class="cap">ผ้าห่มสกรีนรูปคู่ — ของขวัญแต่งงาน</div></div>
+      <div class="work-tile" data-rv=""><img src="images/แก้วสกรีน-2.webp" alt="แก้วสกรีนรูปพร้อมข้อความแสดงความยินดี" width="800" height="611" loading="lazy"><div class="cap">แก้วสกรีนรูปกับข้อความ</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนโลโก้-3.webp" alt="หมอนสกรีนลายโครงการหมู่บ้าน งานผลิตจำนวนมาก" width="1600" height="1200" loading="lazy"><div class="cap">หมอนโลโก้โครงการ — งานองค์กร</div></div>
+      <div class="work-tile" data-rv=""><img src="images/หมอนสกรีนรูป-1.webp" alt="หมอนอิงสกรีนรูปคู่ Happy Wedding Day" width="800" height="800" loading="lazy"><div class="cap">หมอนอิงสกรีนรูปคู่</div></div>
+    </div>
+    <button class="wbtn" style="left: -14px;" aria-label="ดูผลงานก่อนหน้า" onclick="var t=document.getElementById('worksTrack');t.scrollBy({left:-t.clientWidth,behavior:'smooth'})">‹</button>
+    <button class="wbtn" style="right: -14px;" aria-label="ดูผลงานถัดไป" onclick="var t=document.getElementById('worksTrack');t.scrollBy({left:t.clientWidth,behavior:'smooth'})">›</button>
   </div>
 </section>
 
