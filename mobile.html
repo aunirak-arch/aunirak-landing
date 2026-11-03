@@ -79,6 +79,15 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
 .price-row .nt{font-size:11.5px;color:#C2185B}
 .price-row .lf{display:flex;align-items:center;gap:10px;min-width:0}
 .price-row .fig{width:62px;height:50px;object-fit:contain;flex:none}
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.pcard{background:#FFFFFF;border:1px solid #F2D5DE;border-radius:16px;padding:14px 8px 12px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px}
+.pcard .ph{height:110px;display:flex;align-items:center;justify-content:center;width:100%}
+.pcard .ph img{max-height:110px;max-width:130px;width:auto;height:auto;display:block}
+.pcard .pnm{font-family:'Athiti',sans-serif;font-weight:700;font-size:16.5px;margin-top:4px;line-height:1.15}
+.pcard .ppr{font-family:'Athiti',sans-serif;font-weight:700;font-size:24px;color:#C2185B;line-height:1}
+.pcard .ppr span{font-family:'Noto Sans Thai',sans-serif;font-weight:600;font-size:12px;color:#111111}
+.pcard .psz{font-size:11px;color:#6B6B6B}
+.pcard .pnt{font-size:10.5px;color:#C2185B;font-weight:600}
 .pcard{display:flex;gap:12px;border:1px solid #F2D5DE;border-radius:16px;overflow:hidden;background:#FFFFFF}
 .pcard .im{flex:0 0 116px;min-height:116px;background:#FBE4EA}
 .pcard .im img{width:100%;height:100%;object-fit:cover;display:block}
@@ -184,16 +193,16 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
   <span class="eyebrow">01 · หมอนอิงสกรีน</span>
   <h2>หมอนสกรีนรูป ราคาเริ่มต้น 399 บาท มี 7 ขนาด</h2>
   <div style="font-size: 11.5px; color: #6B6B6B;">ราคาปลอกพร้อมหมอน สกรีน 1 ด้าน · เพิ่มด้านหลัง +100 บาท · ถอดซักได้</div>
-  <div data-rv="" style="background: #FFFFFF; border-radius: 16px; padding: 4px 16px; border: 1px solid #F2D5DE;">
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-15x15.webp" alt="ขนาดหมอนอิง 15x15 นิ้วเทียบกับตัวคน" width="432" height="640" loading="lazy"><div><div class="nm">หมอนอิง 15×15 นิ้ว</div><div class="sz">36×36 ซม.</div></div></div><div class="pr">399.-</div></div>
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-15x20.webp" alt="ขนาดหมอนอิง 15x20 นิ้วเทียบกับตัวคน" width="414" height="640" loading="lazy"><div><div class="nm">หมอนอิง 15×20 นิ้ว</div><div class="sz">36×48 ซม.</div></div></div><div class="pr">459.-</div></div>
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-20x20.webp" alt="ขนาดหมอนอิง 20x20 นิ้วเทียบกับตัวคน" width="407" height="640" loading="lazy"><div><div class="nm">หมอนอิง 20×20 นิ้ว</div><div class="sz">48×48 ซม.</div></div></div><div class="pr">499.-</div></div>
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-15x30.webp" alt="ขนาดหมอนอิง 15x30 นิ้วเทียบกับตัวคน" width="486" height="640" loading="lazy"><div><div class="nm">หมอนอิง 15×30 นิ้ว</div><div class="sz">36×73 ซม.</div></div></div><div class="pr">549.-</div></div>
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-nun-20x30.webp" alt="ขนาดหมอนหนุน 20x30 นิ้วเทียบกับตัวคน" width="438" height="640" loading="lazy"><div><div class="nm">หมอนหนุนมาตรฐาน 20×30 นิ้ว</div><div class="sz">48×73 ซม. <span class="nt">· เฉพาะปลอก 399.-</span></div></div></div><div class="pr">699.-</div></div>
-    <div class="price-row"><div class="lf"><img class="fig" src="images/pillow-fig-side-15x45.webp" alt="ขนาดหมอนข้าง 15x45 นิ้วเทียบกับตัวคน" width="640" height="622" loading="lazy"><div><div class="nm">หมอนข้างมาตรฐาน 15×45 นิ้ว</div><div class="sz">38×114 ซม. · สกรีน 2 ด้าน <span class="nt">· เฉพาะปลอก 499.-</span></div></div></div><div class="pr">699.-</div></div>
-    <div class="price-row" style="border-bottom: 0;"><div class="lf"><img class="fig" src="images/pillow-fig-body-19x49.webp" alt="ขนาดหมอนบอดี้ 19x49 นิ้วเทียบกับตัวคน" width="640" height="561" loading="lazy"><div><div class="nm">หมอนบอดี้ 19×49 นิ้ว</div><div class="sz">48×124 ซม. <span class="nt">· เฉพาะปลอก 499.-</span></div></div></div><div class="pr">999.-</div></div>
+  <div class="pgrid">
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-15x15.webp" alt="ขนาดหมอนอิง 15x15 นิ้วเทียบกับตัวคน" width="432" height="640" loading="lazy"></div><div class="pnm">15x15 นิ้ว</div><div class="ppr">399 <span>บาท</span></div><div class="psz">(size : 36 x 36 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-15x20.webp" alt="ขนาดหมอนอิง 15x20 นิ้วเทียบกับตัวคน" width="414" height="640" loading="lazy"></div><div class="pnm">15x20 นิ้ว</div><div class="ppr">459 <span>บาท</span></div><div class="psz">(size : 36 x 48 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-15x30.webp" alt="ขนาดหมอนอิง 15x30 นิ้วเทียบกับตัวคน" width="486" height="640" loading="lazy"></div><div class="pnm">15x30 นิ้ว</div><div class="ppr">549 <span>บาท</span></div><div class="psz">(size : 36 x 73 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-20x20.webp" alt="ขนาดหมอนอิง 20x20 นิ้วเทียบกับตัวคน" width="407" height="640" loading="lazy"></div><div class="pnm">20x20 นิ้ว</div><div class="ppr">499 <span>บาท</span></div><div class="psz">(size : 48 x 48 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-nun-20x30.webp" alt="ขนาดหมอนหนุน 20x30 นิ้วเทียบกับตัวคน" width="438" height="640" loading="lazy"></div><div class="pnm">หมอนหนุน 20x30 นิ้ว</div><div class="ppr">699 <span>บาท</span></div><div class="pnt">(เฉพาะปลอก 399.-)</div><div class="psz">(size : 48 x 73 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-side-15x45.webp" alt="ขนาดหมอนข้าง 15x45 นิ้วเทียบกับตัวคน" width="640" height="622" loading="lazy"></div><div class="pnm">หมอนข้าง 15x45 นิ้ว</div><div class="ppr">699 <span>บาท</span></div><div class="pnt">สกรีน 2 ด้าน (เฉพาะปลอก 499.-)</div><div class="psz">(size : 38 x 114 cm)</div></div>
+    <div class="pcard"><div class="ph"><img src="images/pillow-fig-body-19x49.webp" alt="ขนาดหมอนบอดี้ 19x49 นิ้วเทียบกับตัวคน" width="640" height="561" loading="lazy"></div><div class="pnm">หมอนบอดี้ 19x49 นิ้ว</div><div class="ppr">999 <span>บาท</span></div><div class="pnt">(เฉพาะปลอก 499.-)</div><div class="psz">(size : 48 x 124 cm)</div></div>
   </div>
-  <a class="btn" style="background: #C2185B; color: #FFFFFF;" href="/pillow">ดูรายละเอียดหมอนอิงสกรีน →</a>
+  <div style="text-align: center;"><a class="btn" style="background: #C2185B; color: #FFFFFF;" href="/pillow">ดูรายละเอียดหมอนอิงสกรีน →</a></div>
 </section>
 
 <!-- 02-05 compact category cards -->
