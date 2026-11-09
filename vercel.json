@@ -2,6 +2,19 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/content/12717/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/retirement-gift", "permanent": true },
+    { "source": "/content/11902/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/wedding-gift", "permanent": true },
+    { "source": "/content/12419/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/graduation-gift", "permanent": true },
+    { "source": "/content/13040/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/logo-pillow", "permanent": true },
+    { "source": "/content/12782/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/blanket", "permanent": true },
+    { "source": "/album/3611/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/diecut-pillow", "permanent": true },
+    { "source": "/album/3919/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/diecut-pillow", "permanent": true },
+    { "source": "/album/3921/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/mug", "permanent": true },
+    { "source": "/album/3964/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/blanket", "permanent": true },
+    { "source": "/album/3938/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/retirement-gift", "permanent": true },
+    { "source": "/album/3918/:slug*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/wedding-gift", "permanent": true },
+    { "source": "/categorycontent/:rest*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/blog", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "(www\\.)?xn--12ccat5a8db7dq0cybubec1dk5itkyc\\.com" }], "destination": "https://aunirak.com/", "permanent": true },
     { "source": "/:path*", "destination": "https://aunirak.com/:path*", "permanent": true }
   ]
 }
