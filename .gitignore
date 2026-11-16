@@ -23,3 +23,5 @@ node_modules/
 
 # Claude Code local config
 .claude/
+redirect-301-aunirak.xlsx
+redirect-301-aunirak-v2.xlsx
