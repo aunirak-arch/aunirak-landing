@@ -25,42 +25,46 @@ gtag('config', 'G-M2LBLML1R2');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#FFFFFF;color:#111111;font-family:'Noto Sans Thai',system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:#111111;text-decoration:none}a:hover{color:#C2185B}
+body{margin:0;background:var(--bg0);color:var(--fg0);font-family:'Noto Sans Thai',system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--fg0);text-decoration:none}a:hover{color:var(--fgp)}
 h1,h2,h3{font-family:'Athiti',sans-serif;line-height:1.15;margin:0;letter-spacing:-.01em}
 *{box-sizing:border-box}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
 .sec{padding:32px 0}
-.eyebrow{color:#C2185B;font-weight:600;font-size:12px;letter-spacing:.12em}
+.eyebrow{color:var(--fgp);font-weight:600;font-size:12px;letter-spacing:.12em}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;font-size:15px;border:1.5px solid transparent;white-space:nowrap}
 .btn-line{background:#06C755;color:#FFFFFF}
-.btn-outline{background:transparent;color:#111111;border-color:#111111}
-.crumb{font-size:12.5px;color:#6B6B6B;padding:14px 0 0}
-.crumb a{color:#C2185B;font-weight:600}
-.faq details{border-bottom:1px solid #F2D5DE;padding:14px 2px}
+.btn-outline{background:transparent;color:var(--fg0);border-color:var(--bdk)}
+.crumb{font-size:12.5px;color:var(--fg4);padding:14px 0 0}
+.crumb a{color:var(--fgp);font-weight:600}
+.faq details{border-bottom:1px solid var(--bd0);padding:14px 2px}
 .faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:#C2185B;font-size:22px;line-height:1}
+.faq summary::after{content:"+";color:var(--fgp);font-size:22px;line-height:1}
 .faq details[open] summary::after{content:"\2013"}
-.faq p{margin:8px 0 0;color:#444444}
-.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;background:#FFF7F9;border-radius:20px;padding:28px;margin-top:14px}
+.faq p{margin:8px 0 0;color:var(--fg2)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;background:var(--bg1);border-radius:20px;padding:28px;margin-top:14px}
 .hero img{width:100%;height:auto;border-radius:14px;display:block}
-.chip{display:inline-flex;align-items:center;gap:6px;border:1.5px solid #F2D5DE;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;background:#FFFFFF}
-.chip b{color:#C2185B}
-header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;border-bottom:1px solid #F2D5DE;position:sticky;top:0;background:#FFFFFF;z-index:10}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--bd0);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;background:var(--bg0)}
+.chip b{color:var(--fgp)}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;border-bottom:1px solid var(--bd0);position:sticky;top:0;background:var(--bg0);z-index:10}
 footer{background:#111111;color:#D9D9D9;padding:26px 16px;font-size:13px}
 footer a{color:#D9D9D9}
 .other{display:flex;gap:10px;flex-wrap:wrap}
-.other a{border:1.5px solid #F2D5DE;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13.5px;background:#FFFFFF}
+.other a{border:1.5px solid var(--bd0);border-radius:999px;padding:8px 16px;font-weight:600;font-size:13.5px;background:var(--bg0)}
 .step{display:flex;gap:12px;align-items:flex-start}
 .step .n{width:34px;height:34px;border-radius:999px;background:#C2185B;color:#FFFFFF;font-family:'Athiti',sans-serif;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 @media (max-width:760px){.hero{grid-template-columns:1fr;padding:18px}h1{font-size:26px !important}}
 </style>
+<!-- theme:start -->
+<style>:root{--bg0:#FFFFFF;--bg1:#FFF7F9;--bg2:#FBE4EA;--bg3:#F9D9E2;--bg4:#F2D5DE;--bga:rgba(255,255,255,.97);--bgb:rgba(255,255,255,.92);--bgc:rgba(255,255,255,.85);--fg0:#111111;--fg1:#333333;--fg2:#444444;--fg3:#555555;--fg4:#6B6B6B;--fgp:#C2185B;--fgp2:#A3124C;--fgp3:#8A1240;--fgg:#067A38;--bd0:#F2D5DE;--bd1:#F6E6EC;--bd2:#EFE3E7;--bdk:#111111}html.dark{color-scheme:dark;--bg0:#141214;--bg1:#1B171A;--bg2:#2E1F26;--bg3:#38252D;--bg4:#3A2A31;--bga:rgba(20,18,20,.96);--bgb:rgba(20,18,20,.92);--bgc:rgba(20,18,20,.85);--fg0:#F3EEF0;--fg1:#E0D9DC;--fg2:#CFC7CB;--fg3:#BDB4B8;--fg4:#A69DA1;--fgp:#F0679A;--fgp2:#F58BB2;--fgp3:#F2A0B5;--fgg:#3DDC84;--bd0:#3A2A31;--bd1:#2E2228;--bd2:#2E2228;--bdk:#F3EEF0}html.dark .btn-outline:hover{background:#F3EEF0;color:#141214}html.dark img[src*="logo-aunirak"]{border-radius:10px}.theme-btn{width:44px;height:44px;border-radius:999px;border:1px solid var(--bd0);background:var(--bg0);color:var(--fg0);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;padding:0;transition:color .2s ease,border-color .2s ease}.theme-btn:hover{color:var(--fgp);border-color:var(--fgp)}.theme-btn:focus-visible{outline:3px solid #C2185B;outline-offset:3px}@media (max-width:480px){header.top b{font-size:15px !important;line-height:1.2}header.top .btn{min-height:40px;padding:0 14px;font-size:14px;white-space:nowrap}header.top .theme-btn{width:40px;height:40px}}.theme-btn .sun{display:none}html.dark .theme-btn .sun{display:block}html.dark .theme-btn .moon{display:none}</style>
+<script>(function(){var r=document.documentElement;try{if(localStorage.getItem('theme')==='dark')r.classList.add('dark');}catch(e){}function sync(){var d=r.classList.contains('dark');document.querySelectorAll('.theme-btn').forEach(function(b){b.setAttribute('aria-pressed',d?'true':'false');});}document.addEventListener('DOMContentLoaded',sync);document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.theme-btn');if(!b)return;var d=r.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light');}catch(e){}sync();});})();</script>
+<!-- theme:end -->
 </head>
 <body>
 <header class="top">
-  <a href="/" style="display:flex;align-items:center;gap:10px;"><img src="images/logo-aunirak.png" alt="โลโก้ อุ่นไอรัก @aunirak" width="600" height="600" style="height:48px;width:auto;display:block;"><b style="font-family:'Athiti',sans-serif;font-size:17px;">อุ่นไอรัก หมอนของขวัญ</b></a>
-  <a class="btn btn-line" href="https://lin.ee/9f301YW">สั่งทำผ่าน LINE</a>
+  <a href="/" style="display:flex;align-items:center;gap:10px;"><img src="images/logo-aunirak-192.webp" alt="โลโก้ อุ่นไอรัก @aunirak" width="600" height="600" style="height:48px;width:auto;display:block;"><b style="font-family:'Athiti',sans-serif;font-size:17px;"><span style="white-space:nowrap">อุ่นไอรัก</span> <span style="white-space:nowrap">หมอนของขวัญ</span></b></a>
+  <div style="display:flex;align-items:center;gap:8px;"><button class="theme-btn" type="button" aria-label="สลับโหมดมืด / สว่าง" aria-pressed="false" title="โหมดมืด / สว่าง"><svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg><svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button><a class="btn btn-line" href="https://lin.ee/9f301YW">สั่งทำผ่าน LINE</a></div>
 </header>
 <div class="wrap">
   <nav class="crumb" aria-label="breadcrumb"><a href="/">หน้าแรก</a> › กรอบรูปการ์ตูน</nav>
@@ -68,8 +72,8 @@ footer a{color:#D9D9D9}
   <section class="hero">
     <div style="display:flex;flex-direction:column;gap:14px;">
       <span class="eyebrow">กรอบรูปการ์ตูน</span>
-      <h1 style="font-size:34px;font-weight:700;">กรอบรูปการ์ตูน<br>วาดจากรูปถ่าย <span style="color:#C2185B;">ใส่กรอบพร้อมข้อความ</span></h1>
-      <p style="margin:0;color:#444444;">ส่งรูปถ่ายมา เราวาดเป็นภาพการ์ตูนน่ารัก ๆ ตามรูปจริง ใส่พื้นหลังสถานที่ ข้อความ และวันที่สำคัญ แล้วใส่กรอบพร้อมตั้งโชว์ เป็นของขวัญวันเกิด วันเกษียณ รับปริญญา หรือวันครบรอบที่เก็บไว้ได้นาน วาดได้ทั้งเดี่ยว คู่ หมู่คณะ และสัตว์เลี้ยง ส่งแบบให้ดูก่อนผลิตค่ะ</p>
+      <h1 style="font-size:34px;font-weight:700;">กรอบรูปการ์ตูน<br>วาดจากรูปถ่าย <span style="color:var(--fgp);">ใส่กรอบพร้อมข้อความ</span></h1>
+      <p style="margin:0;color:var(--fg2);">ส่งรูปถ่ายมา เราวาดเป็นภาพการ์ตูนน่ารัก ๆ ตามรูปจริง ใส่พื้นหลังสถานที่ ข้อความ และวันที่สำคัญ แล้วใส่กรอบพร้อมตั้งโชว์ เป็นของขวัญวันเกิด วันเกษียณ รับปริญญา หรือวันครบรอบที่เก็บไว้ได้นาน วาดได้ทั้งเดี่ยว คู่ หมู่คณะ และสัตว์เลี้ยง ส่งแบบให้ดูก่อนผลิตค่ะ</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;"><span class="chip">วาดจากรูปจริง</span><span class="chip">ใส่ข้อความ/วันที่ <b>ฟรี</b></span><span class="chip">ส่งแบบให้ดูก่อนผลิต</span></div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;"><a class="btn btn-line" href="https://lin.ee/9f301YW">ส่งรูปให้ประเมินราคาฟรี</a></div>
     </div>
@@ -79,7 +83,7 @@ footer a{color:#D9D9D9}
   <section class="sec">
     <span class="eyebrow">ราคา</span>
     <h2 style="font-size:26px;margin-top:6px;">กรอบรูปการ์ตูน ราคาตามขนาดและจำนวนคน</h2>
-    <p style="color:#444444;max-width:620px;">ราคาขึ้นกับขนาดกรอบและจำนวนคนในภาพ ส่งรูปมาทางไลน์ให้เราประเมินราคาได้เลย แจ้งราคาและวันส่งชัดเจนก่อนเริ่มงาน ไม่มีค่าใช้จ่ายจนกว่าจะยืนยันแบบค่ะ</p>
+    <p style="color:var(--fg2);max-width:620px;">ราคาขึ้นกับขนาดกรอบและจำนวนคนในภาพ ส่งรูปมาทางไลน์ให้เราประเมินราคาได้เลย แจ้งราคาและวันส่งชัดเจนก่อนเริ่มงาน ไม่มีค่าใช้จ่ายจนกว่าจะยืนยันแบบค่ะ</p>
     <a class="btn btn-line" href="https://lin.ee/9f301YW">สอบถามราคาทาง LINE</a>
   </section>
 
@@ -87,17 +91,17 @@ footer a{color:#D9D9D9}
     <span class="eyebrow">วิธีสั่งทำ</span>
     <h2 style="font-size:26px;margin-top:6px;">สั่งกรอบรูปการ์ตูนง่าย ๆ 4 ขั้นตอน</h2>
     <div style="display:flex;flex-direction:column;gap:14px;margin-top:14px;max-width:620px;">
-      <div class="step"><div class="n">1</div><div><b>ทักไลน์ @aunirak</b><div style="font-size:13px;color:#6B6B6B;">ส่งรูปถ่าย บอกจำนวนคน โอกาส และข้อความที่อยากใส่</div></div></div>
-      <div class="step"><div class="n">2</div><div><b>รับราคาและแบบวาด</b><div style="font-size:13px;color:#6B6B6B;">เราวาดภาพการ์ตูนให้ดูก่อน แก้ได้จนพอใจ</div></div></div>
-      <div class="step"><div class="n">3</div><div><b>พิมพ์และใส่กรอบ</b><div style="font-size:13px;color:#6B6B6B;">ผลิต 3–4 วันหลังยืนยันแบบ</div></div></div>
-      <div class="step"><div class="n">4</div><div><b>จัดส่งทั่วไทย</b><div style="font-size:13px;color:#6B6B6B;">แพ็กกันกระแทกอย่างดี พร้อมเลขพัสดุ</div></div></div>
+      <div class="step"><div class="n">1</div><div><b>ทักไลน์ @aunirak</b><div style="font-size:13px;color:var(--fg4);">ส่งรูปถ่าย บอกจำนวนคน โอกาส และข้อความที่อยากใส่</div></div></div>
+      <div class="step"><div class="n">2</div><div><b>รับราคาและแบบวาด</b><div style="font-size:13px;color:var(--fg4);">เราวาดภาพการ์ตูนให้ดูก่อน แก้ได้จนพอใจ</div></div></div>
+      <div class="step"><div class="n">3</div><div><b>พิมพ์และใส่กรอบ</b><div style="font-size:13px;color:var(--fg4);">ผลิต 3–4 วันหลังยืนยันแบบ</div></div></div>
+      <div class="step"><div class="n">4</div><div><b>จัดส่งทั่วไทย</b><div style="font-size:13px;color:var(--fg4);">แพ็กกันกระแทกอย่างดี พร้อมเลขพัสดุ</div></div></div>
     </div>
   </section>
 
   <section class="sec">
     <span class="eyebrow">เตรียมรูปยังไง</span>
     <h2 style="font-size:26px;margin-top:6px;">ส่งรูปแบบไหน วาดการ์ตูนออกมาแล้วสวย</h2>
-    <div style="color:#444444;max-width:720px;display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+    <div style="color:var(--fg2);max-width:720px;display:flex;flex-direction:column;gap:10px;margin-top:10px;">
       <p style="margin:0;"><b>รูปที่เหมาะ</b> — เห็นใบหน้าชัดเจน แสงสว่างเพียงพอ ไม่เบลอ ไม่ใส่แมสก์ ถ่ายจากมือถือได้เลย ถ้าเป็นรูปหมู่ให้เลือกใบที่ทุกคนหน้าตรงกล้องมากที่สุด นักวาดจะเก็บรายละเอียดเสื้อผ้า ทรงผม และแว่นตาตามรูปจริง</p>
       <p style="margin:0;"><b>บอกโจทย์ให้ครบ</b> — จำนวนคน (คิดราคาตามจำนวนคน) พื้นหลังที่อยากได้ เช่น สถานที่สำคัญของคุณ ข้อความอวยพร และโอกาส เช่น วันเกิด วันเกษียณ ทีมงานจะจัดวางองค์ประกอบและเลือกฟอนต์ให้เหมาะกับงาน</p>
       <p style="margin:0;"><b>แก้แบบได้จนพอใจ</b> — เราส่งแบบวาดให้ดูก่อนพิมพ์จริงทุกครั้ง อยากปรับสีเสื้อ เพิ่มสัตว์เลี้ยง หรือแก้ข้อความ แจ้งได้เลย เริ่มพิมพ์และใส่กรอบเมื่อคุณยืนยันแบบแล้วเท่านั้นค่ะ</p>
@@ -113,9 +117,9 @@ footer a{color:#D9D9D9}
     <details><summary>ใช้เวลาทำกี่วัน</summary><p>วาดภาพและผลิต 3–4 วันหลังยืนยันแบบ งานด่วนทักไลน์มาคุยได้ค่ะ</p></details>
   </section>
 
-  <section class="sec" style="text-align:center;background:#FFF7F9;border-radius:20px;padding:30px 18px;margin-bottom:28px;">
-    <h2 style="font-size:24px;color:#C2185B;">ส่งรูปมาที่ LINE ให้เราประเมินราคาฟรี</h2>
-    <p style="color:#444444;">ตอบไวทุกวัน แจ้งราคาและวันส่งชัดเจนก่อนเริ่มงานค่ะ</p>
+  <section class="sec" style="text-align:center;background:var(--bg1);border-radius:20px;padding:30px 18px;margin-bottom:28px;">
+    <h2 style="font-size:24px;color:var(--fgp);">ส่งรูปมาที่ LINE ให้เราประเมินราคาฟรี</h2>
+    <p style="color:var(--fg2);">ตอบไวทุกวัน แจ้งราคาและวันส่งชัดเจนก่อนเริ่มงานค่ะ</p>
     <a class="btn btn-line" href="https://lin.ee/9f301YW" style="min-height:54px;font-size:17px;">แอด LINE @aunirak</a>
   </section>
 
