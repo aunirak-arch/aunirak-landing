@@ -354,8 +354,13 @@ html.js-ready [data-rv].in{opacity:1;transform:none}
   
   function go(i){cur=i%slides.length;slides.forEach(function(s,k){s.classList.toggle('on',k===cur);});dots.forEach(function(d,k){d.classList.toggle('active',k===cur);});}
   dots.forEach(function(d,k){d.addEventListener('click',function(){if(timer){clearInterval(timer);timer=null;}go(k);});});
+  /*LCPDBG*/var DBG=location.search.indexOf('lcpdebug')!==-1;function dbg(m){if(DBG)console.error('LCPDBG '+Math.round(performance.now())+' '+m);}
+  if(DBG){try{new PerformanceObserver(function(l){l.getEntries().forEach(function(e){dbg('lcp size='+e.size+' el='+(e.element?e.element.tagName+'.'+e.element.className:'null')+' url='+(e.url||'').split('/').pop()+' rt='+Math.round(e.renderTime)+' lt='+Math.round(e.loadTime));});}).observe({type:'largest-contentful-paint',buffered:true});}catch(e){dbg('po err');}
+  ['pointerdown','pointermove','touchstart','keydown','wheel','scroll','mousemove','mouseover','click','visibilitychange','resize','focus','blur'].forEach(function(t){window.addEventListener(t,function(){dbg('event '+t);},{once:true,capture:true});});
+  window.addEventListener('load',function(){dbg('load');});
+  [1500,4000,8000].forEach(function(ms){setTimeout(function(){dbg('tick slides='+[].map.call(slides,function(x){return (x.currentSrc?'L':'-')+(x.classList.contains('on')?'*':'');}).join('')+' vis='+document.visibilityState+' w='+innerWidth+' started='+started);},ms);});}/*LCPDBG-END*/
   var started=false;
-  function startSlides(){if(started)return;started=true;loadSlides();if(slides.length>1 && !reduce){timer=setInterval(function(){go(cur+1);},4500);}}
+  function startSlides(){if(started)return;started=true;dbg('startSlides');loadSlides();if(slides.length>1 && !reduce){timer=setInterval(function(){go(cur+1);},4500);}}
   ['pointerdown','touchstart','keydown','wheel'].forEach(function(ev){window.addEventListener(ev,startSlides,{once:true,passive:true});});
   var burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
   if(burger&&mnav){burger.addEventListener('click',function(){var open=mnav.hasAttribute('hidden');if(open){var hd=document.querySelector('header');mnav.style.top=(hd?hd.getBoundingClientRect().bottom:0)+'px';mnav.removeAttribute('hidden');}else{mnav.setAttribute('hidden','');}burger.setAttribute('aria-expanded',open?'true':'false');});
